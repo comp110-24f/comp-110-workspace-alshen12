@@ -3,12 +3,12 @@
 __author__: str = "730630720"
 
 
-def main_planner(guests):
+def main_planner(guests: int) -> None:
     """Groups and helps plan the tea party using the functions listed below!"""
     print("A Cozy Tea Party for " + str(guests) + " People")
     print("Tea Bags: " + str(tea_bags(guests)))
     print("Treats: " + str(treats(guests)))
-    print("Costs: " + str(cost(tea_bags(guests), treats(guests))))
+    print("Cost: " + str(cost(tea_bags(guests), treats(guests))))
     return
 
 
