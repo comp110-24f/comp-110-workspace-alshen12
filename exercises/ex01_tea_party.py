@@ -8,7 +8,7 @@ def main_planner(guests: int) -> None:
     print("A Cozy Tea Party for " + str(guests) + " People")
     print("Tea Bags: " + str(tea_bags(guests)))
     print("Treats: " + str(treats(guests)))
-    print("Cost: " + str(cost(tea_bags(guests), treats(guests))))
+    print("Cost: $" + str(cost(tea_bags(guests), treats(guests))))
     return
 
 
@@ -19,7 +19,7 @@ def tea_bags(people: int) -> int:
 
 def treats(people: int) -> int:
     """ "Finds the number of treats needed for the number of people"""
-    return int(float(tea_bags(people)) * 1.5)
+    return int(float(tea_bags(people=people)) * 1.5)
 
 
 def cost(tea_count: int, treat_count: int) -> float:
