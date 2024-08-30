@@ -22,9 +22,6 @@ def treats(people: int) -> int:
     return int(float(tea_bags(people)) * 1.5)
 
 
-# Lots of conversions lol
-
-
 def cost(tea_count: int, treat_count: int) -> float:
     """Finds the cost of the tea party based on given tea count and treat count"""
     return tea_count * 0.5 + treat_count * 0.75
