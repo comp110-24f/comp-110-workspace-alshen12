@@ -1,13 +1,7 @@
-def multiple_each_val_by_idx(number) -> str:
-    idx = 0
-    lelly = ""
-    num_str = str(number)
+x: list[float] = [1.0, 2.0]
+y: list[float] = [3.0, 4.0]
+y = x
+x[0] = 3.0
 
-    while idx < len(num_str):
-        tim = int(num_str[idx])
-        lelly += str(tim * idx)
-        idx += 1
-    return lelly
-
-
-print(multiple_each_val_by_idx(10784))
+print(x)
+print(y)

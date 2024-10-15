@@ -16,7 +16,7 @@ def main(secret: str) -> None:
         )  # utlizes user input to check correctness using emojified function
         if secret == guess:
             print(f"You won in {turn}/6 turns!")
-            break  # breaks out of loop once user wins
+            return  # breaks out of loop once user wins
         turn += 1
 
     if turn >= 7:  # >= to catch any potential time where turn somehow becomes over 7
